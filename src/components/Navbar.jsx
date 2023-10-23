@@ -6,7 +6,8 @@ import search from "../assets/Search.png";
 import cart from "../assets/Cart.png";
 
 const Navbar = () => {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
+
   return (
     <>
       <Layout>
@@ -17,8 +18,8 @@ const Navbar = () => {
 
           <div className="flex gap-10 mx-auto">
             <button onClick={() => navigate("/")}>Home</button>
-            <button onClick={() => navigate("/about")}>Menu</button>
-            <button onClick={() => navigate("/portofolio")}>Our Chef</button>
+            <button onClick={() => navigate("/menu")}>Menu</button>
+            <button onClick={() => navigate("/ourchef")}>Our Chef</button>
           </div>
 
           <div className="flex justify-center">

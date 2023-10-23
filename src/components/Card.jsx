@@ -7,13 +7,15 @@ function Card() {
   return (
     <>
       <Layout>
-        <div className="flex justify-center h-[500px] w-full gap-10 my-20">
+        <div className="flex justify-center h-[500px] w-full gap-16 mt-20">
+          {/* Our Spesial 1 */}
           <div class="rounded-xl overflow-hidden shadow-xl w-80 my-3 bg-white border border-[#c4c4c4]">
             <div class="relative w-full h-24 flex justify-center"></div>
             <div class="absolute -mt-48 ml-12">
               <img
+                alt=""
                 src={os1}
-                class="rounded-full border-solid border-white border-2 -mt-3 ml-3"
+                class="rounded-full border-solid border-4 border-orange-500 border-2 -mt-3 ml-3"
               />
             </div>
             <div class="mt-5 font-poppins text-center px-3 pb-6 pt-2 ">
@@ -45,13 +47,14 @@ function Card() {
             </div>
           </div>
 
-          {/* OS-2 */}
+          {/* Our Special 2 */}
           <div class="rounded-xl overflow-hidden shadow-xl w-80 my-3 bg-white border border-[#c4c4c4]">
             <div class="relative w-full h-24 flex justify-center"></div>
             <div class="absolute -mt-48 ml-12">
               <img
+                alt=""
                 src={os1}
-                class="rounded-full border-solid border-white border-2 -mt-3 ml-3"
+                class="rounded-full border-solid border-4 border-orange-500 border-2 -mt-3 ml-3"
               />
             </div>
             <div class="mt-5 font-poppins text-center px-3 pb-6 pt-2 ">
@@ -83,13 +86,14 @@ function Card() {
             </div>
           </div>
 
-          {/* OS-3 */}
+          {/* Our Special 3 */}
           <div class="rounded-xl overflow-hidden shadow-xl w-80 my-3 bg-white border border-[#c4c4c4]">
             <div class="relative w-full h-24 flex justify-center"></div>
             <div class="absolute -mt-48 ml-12">
               <img
+                alt=""
                 src={os1}
-                class="rounded-full border-solid border-white border-2 -mt-3 ml-3"
+                class="rounded-full border-solid border-4 border-orange-500 border-2 -mt-3 ml-3"
               />
             </div>
             <div class="mt-5 font-poppins text-center px-3 pb-6 pt-2 ">

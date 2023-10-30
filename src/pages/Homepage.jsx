@@ -3,10 +3,10 @@ import Navbar from "../components/Navbar";
 import Layout from "../layout";
 import img1 from "../assets/Hero.png";
 import img2 from "../assets/Carousel.png";
-import Card from "../components/Card";
 import Footer from "../components/Footer";
+import CardMenu from "../components/CardMenu";
 
-function Homepage() {
+export const Homepage = () => {
   return (
     <>
       <div>
@@ -14,18 +14,18 @@ function Homepage() {
 
         {/* Section 1 */}
         <Layout>
-          <div className="flex w-full h-auto">
+          <div className="flex flex-col md:flex-row w-full h-auto">
             {/* Left */}
-            <div className="w-1/2 pt-48">
+            <div className="w-full md:w-1/2 pt-8 md:pt-48">
               <div>
-                <p className="font-poppins font-medium text-2xl">
+                <p className="font-poppins font-medium text-2xl text-left">
                   Welcome to EAT.ME
                 </p>
               </div>
 
               <div className="py-5">
                 <div className="pr-28">
-                  <p className="font-poppins font-bold text-4xl text-orange-500">
+                  <p className="font-poppins font-bold text-4xl text-orange-500 text-left">
                     There are many menu options that you can choose from what
                     are you waiting for? let’s order now!
                   </p>
@@ -33,18 +33,18 @@ function Homepage() {
               </div>
 
               <div className="">
-                <p className="font-medium text-lg font-poppins">
+                <p className="font-medium text-lg font-poppins text-left">
                   Start your culinary adventure with EatMate Today
                 </p>
               </div>
 
-              <div className="flex pt-9 gap-5">
-                <div className="w-32 py-2 rounded-lg border-2 border-orange-500 bg-orange-500">
-                  <button className="w-full text-white font-medium">
+              <div className="flex pt-9 gap-5 ">
+                <div className="w-32 py-2 rounded-lg border-2 border-orange-500 bg-orange-500 hover:bg-orange-600">
+                  <button className="w-full text-white font-medium ">
                     Add to cart
                   </button>
                 </div>
-                <div className="w-32 py-2 rounded-lg border-2 border-orange-500">
+                <div className="w-32 py-2 rounded-lg border-2 border-orange-500 hover:bg-slate-50 active:bg-white focus:outline-none focus:ring focus:ring-slate-50">
                   <button className="w-full text-black font-medium">
                     Book a Table
                   </button>
@@ -53,8 +53,8 @@ function Homepage() {
             </div>
 
             {/* Right */}
-            <div className="w-1/2 grid justify-items-start">
-              <div className="pl-24">
+            <div className="w-full md:w-1/2">
+              <div className="hidden md:block pl-24">
                 <img src={img1} alt="" />
               </div>
             </div>
@@ -62,17 +62,24 @@ function Homepage() {
         </Layout>
 
         {/* Section 2 */}
-        <div className="h-[1210px] bg-[#F5F5F5]">
+        <div className="h-[1350px] bg-[#F5F5F5]">
           <Layout>
-            <div className="flex justify-center">
-              <p className="py-20 text-3xl font-bold font-poppins text-orange-500">
+            <div className="flex flex-col md:flex-row justify-center">
+              <p className="pt-20 text-3xl font-bold font-poppins text-orange-500">
                 Our Special Menu
               </p>
             </div>
 
-            <Card />
+            <div>
+              <CardMenu />
+            </div>
+            {/* <div className="">
+              {MENUS.map((menus) => (
+                <Menus data={menus} />
+              ))}
+            </div> */}
 
-            <div className="mx-48 my-14 overflow-hidden flex justify-center ">
+            <div className="mx-6 md:mx-48 my-14 overflow-hidden flex justify-center">
               <div className="w-full flex justify-center bg-orange-500 rounded-xl mx-4">
                 {/* Left */}
                 <div className="w-1/2">
@@ -106,6 +113,6 @@ function Homepage() {
       </div>
     </>
   );
-}
+};
 
 export default Homepage;

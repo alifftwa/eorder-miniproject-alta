@@ -29,7 +29,7 @@ const Navbar = () => {
               </button>
             </div>
             <div className="flex justify-center w-24">
-              <button>
+              <button onClick={() => navigate("/cart")}>
                 <img src={cart} alt="" />
               </button>
             </div>
